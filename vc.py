@@ -27,6 +27,6 @@ for i in range(h):
             share2[i,2*j:2*j+2] = pattern2
 
 cv2.imwrite("output/share1.png", share1)
-
+cv2.imwrite("output/share2.png", share2)
 reconstructed = cv2.bitwise_or(share1, share2)
 cv2.imwrite("output/reconstructed.png", reconstructed)
